@@ -1,0 +1,149 @@
+body
+{
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    margin-bottom: 7vw;
+}
+
+.content
+{
+    height:95%;
+}
+
+#right_answer
+{
+    margin: 2vw;
+}
+
+ul
+{
+    padding: 0 2vw;
+    display: inline-block;
+    margin: 1vw 0;
+}
+
+img
+{
+    width: 5%;
+    height: auto;
+    margin: 1vw;
+}
+
+.rules
+{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+#caseq
+{
+    font-size: 1.5em;
+}
+
+.reponse
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.ligne
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#premiere_rep, #deuxieme_rep, #troisieme_rep, #quatrieme_rep
+{
+    padding: 1vw;
+    border: 2px solid grey;
+    margin: 1vw 1vw;
+    width: 40%;
+    height: 10%;
+}
+
+#mySelect
+{
+    border: 2px solid grey;
+}
+
+input[type=button]
+{
+    background-color: rgb(62, 35, 161);
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: max-content;
+}
+
+.tab_joueur
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.joueur
+{
+    margin: 0;
+}
+
+.subject
+{
+    margin: 8px 0;
+}
+
+.rules
+{
+    margin: 1vw;
+}
+
+a
+{
+    text-decoration: none;
+    color: grey;
+}
+
+p[class=dé]
+{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#help
+{
+    z-index: 5000;
+    background: grey;
+    width: 100%;
+    height: 100%;
+}
+
+footer
+{
+    position:fixed;
+   background: grey;
+   height:auto;
+   bottom:0;
+   left:0;
+   right:0;
+   box-shadow: 0 3px 15px 2px rgba(26, 22, 22, 0.9);
+}
+
+#image2
+{
+    width: 35%;
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr" id="html">  
+    <head>    
+        <title id="haut">English Game</title>    
+        <meta name="description" content="English game  for every English level"/>    
+        <meta name="keywords" content="English, game, html, css, javascript"/>    
+        <meta name="author" content="Bormann Enzo"/>    
+        <meta charset="utf-8"/>    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+        <link rel="stylesheet" type="text/css" href="Anglais.css"/>    
+        <style></style>  
+    </head> 
+<body>
+<div class="content">
+    <h1 id="Titre">English Game</h1>
+    <div id="nb_joueur">
+        <p>How many players ?
+            <select id="mySelect">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <input type="button" value="Validate" id="validate"></p>
+    </div>
+    <div style="display:none" id="nomJoueur">
+        <input type="text" id="text"><input type="button" value="Validate" id="val">
+    </div>
+    <div class="tab_joueur" id="tab_joueur">
+        <p class=joueur id="joueur1" style="display:none">Joueur 1 Score <span id="score1">0</span></p>
+        <p class=joueur id="joueur2" style="display:none">Joueur 2 Score <span id="score2">0</span></p>
+        <p class=joueur id="joueur3" style="display:none">Joueur 3 Score <span id="score3">0</span></p>
+        <p class=joueur id="joueur4" style="display:none">Joueur 4 Score <span id="score4">0</span></p>
+    </div>
+    <div id="pres" style="display: none">
+        <p class="subject" id="theme">There are 6 subjects :
+            <ul class="theme">1. What is this ?</ul>
+            <ul class="theme">2. Which word is spelled correctly?</ul>
+            <ul class="theme">3. General Questions</ul>
+            <ul class="theme">4. US/UK</ul>
+            <ul class="theme">5. Acronym</ul>
+        </p>
+        <input type="button" value="Throw the die !" id="lets_go">
+        <p id="de" ></p>
+        <div id="image">
+            <p class="dé" style="display:none" id='img1'><img src="english_de_one.jfif" alt="dé"> Theme : What is this ?</p>
+            <p class="dé" style="display:none" id='img2'><img src="english_de_two.jfif" alt="dé"> Theme : Which word is spelled correctly?</p>
+            <p class="dé" style="display:none" id='img3'><img src="english_de_three.jfif" alt="dé"> Theme : General Questions</p>
+            <p class="dé" style="display:none" id='img4'><img src="english_de_four.jfif" alt="dé"> Theme : US/UK</p>
+            <p class="dé" style="display:none" id='img5'><img src="english_de_five.jfif" alt="dé"> Theme : Acronym</p>
+            <p class="dé" style="display:none" id='img6'><img src="english_de_six.jfif" alt="dé"> Choose you theme !</p>
+        </div>
+        <div>
+            <input type="button" value="1. What is this ?" style="display:none" id="un">
+            <input type="button" value="2. Which word is spelled correctly?" style="display:none" id="deux">
+            <input type="button" value="3. General Questions" style="display:none" id="trois">
+            <input type="button" value="4. US/UK" style="display:none" id="quatre">
+            <input type="button" value="5. Acronym" style="display:none" id="cinq">
+        </div>
+    </div>
+    <input type="button" style="display:none" value="Show me the question !" id="Show_me_question">
+    <div id="question" class="question">
+        <p id="answer" style="display: none">Answer de following question :<div id="caseq"><img src="" id="image2" style="display:none"></div></p>
+        <input type="button" value="Cash" style="display:none" id="cash">        
+        <input type="button" value="Square" style="display:none" id="square">
+        <input type="button" value="Duo" style="display:none" id="duo">
+    </div>
+    <div class="reponse" id="reponses">
+        <div class="ligne">
+            <p style="display:none" style="visibility: hidden" id="premiere_rep"></p>
+            <p style="display:none" style="visibility: hidden" id="deuxieme_rep"></p>
+        </div>
+        <div class="ligne">
+            <p style="display:none" style="visibility: hidden" id="troisieme_rep"></p>
+            <p style="display:none" style="visibility: hidden" id="quatrieme_rep"></p>
+        </div>
+        <div>
+            <input type="text" id="rep_cash" style="display:none">
+            <input type="button" value="Validate" style="display:none" id="validate2">
+            <p id="right_answer" style="display:none"></p>
+        </div>
+    </div>
+    <div>
+        <input type="button" value="Next question !" id="suivante" style="display: none">
+    </div>
+    <div class="rules"><a href="javascript:PopupCentrer('Essai.html',600,300,'menubar=no,status=no')">Rules</a></div>
+</div>
+<footer><ul>Mentions légales</ul><ul>Contact</ul></footer>
+</body>
+<script src="Anglais.js"></script>
+</html>

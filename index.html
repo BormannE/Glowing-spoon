@@ -49,8 +49,15 @@
             {
                 i++;
             }
-            var taille = i++;
-            console.log(json[taille]);
+            var taille = i+2;
+            for (let j=0;j<taille;j++)
+            {
+                if (json[j] == "\"")
+                {
+                    if (json[j+1] in alphabet)
+                        console.log(json[j+1])
+                }
+            }
         }
 
         oReq.send();

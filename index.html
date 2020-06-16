@@ -32,7 +32,9 @@
             var first_sheet_name = workbook.SheetNames[0];
             /* Get worksheet */
             var worksheet = workbook.Sheets[first_sheet_name];
-            console.log(XLSX.utils.sheet_to_json(workbook.Sheets[worksheet], {raw: false}));
+            console.log(XLSX.utils.sheet_to_json(worksheet, {
+                raw: true, defval: null
+            }));
         }
 
         oReq.send();

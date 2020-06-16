@@ -45,6 +45,16 @@
         var number = [0,1,2,3,4,5,6,7,8,9];
         var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
         
+         function est_dans(tab,x)
+        {
+            for(let k=0;k<tab.length;k++)
+            {
+                if (tab[k] == x)
+                    return true
+                else
+                    return false
+            }
+        }
         function essai(json)
         {
             var i = 1;
@@ -57,11 +67,10 @@
             {
                 if (json[j] == "\"")
                 {
-                    if (json[j+1] in alphabet)
+                    if (est_dans(alphabet,json[j+1]))
                         console.log(json[j+1])
                 }
             }
-        }
 
         oReq.send();
     </script>
